@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProtegidaComponent } from './components/protegida/protegida.component';
 import { PreciosComponent } from './components/precios/precios.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AuthModule } from '@auth0/auth0-angular';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,11 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule.forRoot({
+      domain: 'dev-expgn6mt.us.auth0.com',
+      clientId: '4EjOtLRD9dRY693r2SsHiXP4Z5aaaM80'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
