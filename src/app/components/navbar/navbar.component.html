@@ -14,12 +14,12 @@
           <a  [routerLink]="['precios']" routerLinkActive="active" class="nav-link" href="#"> Precios </a>
         </li>
         <li class="nav-item dropdown">
-        <li class="nav-item">
+        <li *ngIf="isAuth" class="nav-item">
           <a  [routerLink]="['protegida']" routerLinkActive="active" class="nav-link"> Protegida </a>
         </li>
       </ul>
       <form class="d-flex">
-        <button class="btn btn-outline-dark" type="submit"> SignUp </button>
+        <app-auth-button></app-auth-button>
       </form>
     </div>
   </div>

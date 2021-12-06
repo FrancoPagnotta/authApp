@@ -8,6 +8,7 @@ import { ProtegidaComponent } from './components/protegida/protegida.component';
 import { PreciosComponent } from './components/precios/precios.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from '@auth0/auth0-angular';
+import { AuthButtonComponent } from './components/auth-button/auth-button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AuthModule } from '@auth0/auth0-angular';
     NavbarComponent,
     HomeComponent,
     ProtegidaComponent,
-    PreciosComponent
+    PreciosComponent,
+    AuthButtonComponent
   ],
   imports: [
     BrowserModule,
